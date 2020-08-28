@@ -31,7 +31,16 @@ public class Person2 {
 	 */
 	private String calc(String input) {
 	  //Person 2 put your implementation here
-	  return null;
+		
+	  Random random = new Random();
+	  int x = random.nextInt(input.length());
+	  char[] mix = null;
+	  
+	  for(int i=0; i<input.length(); i++){
+		  mix[i] = input.charAt(x);}
+	  
+	  String mixed = mix.toString();
+	  return mixed;
 	}
 	/**
 	 * Return a string rep of this object
