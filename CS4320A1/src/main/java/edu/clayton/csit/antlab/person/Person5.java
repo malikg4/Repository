@@ -16,8 +16,8 @@ public class Person5 {
 	 * name
 	 * @param pname the person's real name
 	 */
-  public Person5(String pname) {
-    name = pname;
+  public Person5(String name) {
+    name = "Gregory";
   }
   	/**
 	 * This method should take the string
@@ -30,10 +30,15 @@ public class Person5 {
 	 * @return the modified string
 	 */
 	private String calc(String input) {
-	  //Person 5 put your implementation here
-	  return null;
+   
+	 	  if (name.length()>2){
+        char first = name.charAt(0);
+        char second = name.charAt(1);
+        name = (name.substring(1)).substring(1);
+        return name + first + second;
 	}
-	
+	return name;
+   }
 	/**
 	 * Return a string rep of this object
 	 * that varies with an input string
@@ -45,5 +50,12 @@ public class Person5 {
 	public String toString(String input) {
 	  return name + calc(input);
 	}
+   Person5 g = new Person5 (name);
 
-}
+     public static void main (String[]args){
+Person5 G = new Person5("Greg");
+System.out.println(G.toString());
+     
+     }
+   }
+
