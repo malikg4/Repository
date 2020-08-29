@@ -6,9 +6,10 @@ package edu.clayton.csit.antlab.person;;
  *  
  *  @author  Qu
  *  @version 1.1
+ * Edited by Rodney Evans
  */
 public class Person3 {
-   /** Holds the persons real name */  
+   /** Holds the persons real name7 */  
 	private String name;
 	
 	/**
@@ -43,6 +44,10 @@ public class Person3 {
 	 */
 	private String calc(String input) {
 	  //Person 3 put your implementation here
-	  return null;
+	   String reverse = "";
+	   for(int i = input.length() ; i >= 0; i--){
+		reverse = reverse + charAt(i);
+	   }
+	   return reverse;
 	}
 }
